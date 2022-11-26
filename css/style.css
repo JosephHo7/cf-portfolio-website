@@ -1,0 +1,265 @@
+/* 
+Colors Used
+
+Text Color (Dark Gray): #2b2b2b
+Primary Color (Purple): #357b70
+Secondary Color (Orange): #e0b354
+Acitve-link Color (light-green): #489c79
+*/
+
+:root {
+    --primary-color: #357b70;
+    --secondary-color: #e0b354;
+    --dark-grey: #2b2b2b;
+    --light-grey: #D3D3D3;
+    --light-green: #489c79;
+    --white: #fff; 
+    --text-white: #fff;
+    --larger-text: 18px;
+    --main-text: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'lato', sans-serif;
+    font-weight: 400;
+    font-size: var(--main-text);
+    line-height: 1.6;
+}
+
+.profile-portrait {
+    width: 250px;
+    float: left;
+    margin-right: 40px;
+    border-radius: 50%;
+}
+
+.profile{ 
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.page-header {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid var(--dark-grey);
+}
+
+.logo-container {
+    display: flex;
+    height: 70px;
+    width: 200px;
+}
+
+.header-logo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.page-header__item:last-child {
+    flex-grow:1;
+    text-align: right;
+}
+
+.page-header__item {
+    flex: 0 1 200px;
+}
+
+.navigation-list {
+    list-style-type: none;
+}
+
+.navigation-list li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.navigation-list__item-1, .navigation-list__item-2, .navigation-list__item-3, .navigation-list__item-4  {
+    transition: .2s font-size;
+}
+
+.navigation-list__item-1:hover, .navigation-list__item-2:hover, .navigation-list__item-3:hover, .navigation-list__item-4:hover {
+    font-size: var(--larger-text);
+}
+
+.page-footer {
+    clear: both;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+a {
+    color: var(--primary-color);
+}
+
+a:visited {
+    color: var(--primary-color);
+}
+
+a:hover, a:focus{
+    text-decoration: none;
+}
+
+a:active {
+    color: var(--light-green);
+}
+
+/* start grid fallback*/
+.grid__item {
+    display:inline-block;
+    width: 33%;
+}
+/*end grid fallback*/
+
+@supports (display:grid) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px; 
+        margin: 0;
+    }
+} 
+
+.grid__item {
+    background-color: var(--light-grey);
+    padding: 15px;
+    width: auto;
+    min-height: auto;
+    margin: 0; 
+}
+
+@media all and (max-width: 500px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media all and (max-width:750px) {
+    .grid {
+        grid-gap: 10px;
+    }
+    .grid__item:last-child {
+        grid-column: auto/auto;
+        grid-row: auto/auto;
+    }
+    h1 {
+        font-size: 22px;
+    }
+}
+
+.button {
+    border:none; 
+    display: inline-block;
+    font-family: inherit;
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    transition: opacity 0.2s;
+}
+
+.button:hover, .button:focus {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.button:visited {
+    text-decoration: none;
+    color: var(--text-white);
+}
+
+.about-me-content {
+    display: block;
+    /* max-width: 500px; */
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-me-content p {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.skill-table {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.hobby-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes car-move {
+    from {
+        transform: translate(-540px, 0);
+    }
+    to {
+        transform: translate(554px, 0);
+    }
+}
+
+.city-skyline-pic {
+    width: 100%;
+}
+
+.car-pic {
+    height: 70%;
+    width: 20%;
+    animation: 8s car-move infinite linear; 
+    z-index: -1;
+}
+
+.animation-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 100px;
+}
+
+.animation-row2-left {
+    width: auto;
+    background-color: var(--white);
+}
+
+.animation-row2-center {
+    display: flex;
+    width: auto;
+   justify-content: center;
+}
+
+.animation-row2-right {
+    width: auto;
+    background-color: var(--white);
+}
