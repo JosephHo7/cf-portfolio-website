@@ -8,7 +8,7 @@
 /* 
 Colors Used
 
-Text Color (Dark Gray): #2b2b2b 
+Text Color (Dark Gray): #2b2b2b
 Primary Color (Purple): #357b70
 Secondary Color (Orange): #e0b354
 Acitve-link Color (light-green): #489c79
@@ -302,32 +302,44 @@ a:active {
 
 .animation-container > *:nth-child(1) {
     -ms-grid-row: 1;
+    grid-row: 1;
     -ms-grid-column: 1;
+    grid-column: 1;
 }
 
 .animation-container > *:nth-child(2) {
     -ms-grid-row: 1;
+    grid-row: 1;
     -ms-grid-column: 2;
+    grid-column: 2;
 }
 
 .animation-container > *:nth-child(3) {
     -ms-grid-row: 1;
+    grid-row: 1;
     -ms-grid-column: 3;
+    grid-column: 3;
 }
 
 .animation-container > *:nth-child(4) {
     -ms-grid-row: 2;
+    grid-row: 2;
     -ms-grid-column: 1;
+    grid-column: 1;
 }
 
 .animation-container > *:nth-child(5) {
     -ms-grid-row: 2;
+    grid-row: 2;
     -ms-grid-column: 2;
+    grid-column: 2;
 }
 
 .animation-container > *:nth-child(6) {
     -ms-grid-row: 2;
+    grid-row: 2;
     -ms-grid-column: 3;
+    grid-column: 3;
 }
 
 .animation-row2-left {
@@ -348,4 +360,16 @@ a:active {
 .animation-row2-right {
     width: auto;
     background-color: #fff;
+}
+
+.contact-content {
+    text-align: center;
+}
+
+.contact-me-link {
+    margin-top: 30px;
+}
+
+.page-title {
+    text-align: center;
 }
