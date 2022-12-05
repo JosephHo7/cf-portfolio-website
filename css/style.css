@@ -265,15 +265,3 @@ a:active {
     width: auto;
     background-color: var(--white);
 }
-
-.contact-content {
-    text-align: center;
-}
-
-.contact-me-link {
-    margin-top: 30px;
-}
-
-.page-title {
-    text-align: center;
-}
