@@ -13,10 +13,12 @@ Acitve-link Color (light-green): #489c79
     --dark-grey: #2b2b2b;
     --light-grey: #D3D3D3;
     --light-green: #489c79;
+    --shadow-color: rgba(0, 0, 0, 0.3);
     --white: #fff; 
     --text-white: #fff;
     --larger-text: 18px;
     --main-text: 16px;
+    --bold-font: 700;
 }
 
 * {
@@ -95,17 +97,17 @@ body {
 
 h1 {
     font-size: 30px;
-    font-weight: 700;
+    font-weight: var(--bold-font)
 }
 
 h2 {
     font-size: 24px;
-    font-weight: 700;
+    font-weight: var(--bold-font)
 }
 
 h3 {
     font-size: 18px;
-    font-weight: 700;
+    font-weight: var(--bold-font)
 }
 
 a {
@@ -182,7 +184,7 @@ a:active {
     text-decoration: none;
     padding: 10px;
     border-radius: 3px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid var(--shadow-color);
     transition: opacity 0.2s;
 }
 
