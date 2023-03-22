@@ -1,0 +1,79 @@
+:root {
+    --primary-color: #357b70;
+    --secondary-color: #e0b354;
+    --dark-grey: #2b2b2b;
+    --light-grey: #D3D3D3;
+    --light-green: #489c79;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --white: #fff; 
+    --text-white: #fff;
+    --larger-text: 18px;
+    --main-text: 16px;
+    --bold-font: 700;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'lato', sans-serif;
+    font-weight: 400;
+    font-size: var(--main-text);
+    line-height: 1.6;
+    background-image: url("/img/Webpage-background.png");
+    background-size: cover;
+}
+
+.about-me-content {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-me-content p {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+/* about me grid css  */
+.about-me-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.profile-portrait {
+    width: 250px;
+    float: right;
+    margin-right: 40px;
+    border-radius: 50%;
+}
+
+.about-text {
+    display: block;
+    text-align: left;
+}
+
+/* .hobby-list {
+    display: block;
+    list-style-type: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+
+} */
+
+/* .skill-text {
+    display: flex;
+    justify-content: center;
+} */
+
+.skill-table {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+
+} 
+

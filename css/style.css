@@ -7,6 +7,7 @@ Secondary Color (Orange): #e0b354
 Acitve-link Color (light-green): #489c79
 */
 
+/*css design for all pages */
 :root {
     --primary-color: #357b70;
     --secondary-color: #e0b354;
@@ -32,18 +33,12 @@ body {
     line-height: 1.6;
 }
 
-.profile-portrait {
-    width: 250px;
-    float: left;
-    margin-right: 40px;
-    border-radius: 50%;
-}
-
 .profile{ 
     max-width: 700px;
     margin: 0 auto;
 }
 
+/* header footer  */
 .page-header {
     display: flex;
     width: 100%;
@@ -71,28 +66,33 @@ body {
     flex: 0 1 200px;
 }
 
-.navigation-list {
-    list-style-type: none;
-}
-
-.navigation-list li {
-    display: inline-block;
-    margin-left: 15px;
-}
-
-.navigation-list__item-1, .navigation-list__item-2, .navigation-list__item-3, .navigation-list__item-4  {
-    transition: .2s font-size;
-}
-
-.navigation-list__item-1:hover, .navigation-list__item-2:hover, .navigation-list__item-3:hover, .navigation-list__item-4:hover {
-    font-size: var(--larger-text);
-}
-
 .page-footer {
     clear: both;
     display: flex;
     flex-flow: column;
     align-items: center;
+}
+
+/* css for nav bar */
+.navigation-list {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.navigation-list li {
+    display: inline-block;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.navigation-list__item-1, .navigation-list__item-2, .navigation-list__item-3, .navigation-list__item-4  {
+    transition: .2s font-size;
+    text-decoration: none;
+}
+
+.navigation-list__item-1:hover, .navigation-list__item-2:hover, .navigation-list__item-3:hover, .navigation-list__item-4:hover {
+    font-size: var(--larger-text);
+    text-decoration: none;
 }
 
 h1 {
@@ -112,10 +112,12 @@ h3 {
 
 a {
     color: var(--primary-color);
+    text-decoration: none;
 }
 
 a:visited {
     color: var(--primary-color);
+    text-decoration: none;
 }
 
 a:hover, a:focus{
@@ -124,6 +126,7 @@ a:hover, a:focus{
 
 a:active {
     color: var(--light-green);
+    text-decoration: none;
 }
 
 /* start grid fallback*/
@@ -150,6 +153,7 @@ a:active {
     margin: 0; 
 }
 
+/* media query  */
 @media all and (max-width: 500px) {
     .grid {
         grid-template-columns: 1fr;
@@ -175,6 +179,7 @@ a:active {
     }
 }
 
+/* button css  */
 .button {
     border:none; 
     display: inline-block;
@@ -198,33 +203,8 @@ a:active {
     color: var(--text-white);
 }
 
-.about-me-content {
-    display: block;
-    /* max-width: 500px; */
-    margin: 0 auto;
-    text-align: center;
-}
-
-.about-me-content p {
-    max-width: 500px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-}
-
-.skill-table {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 25px;
-}
-
-.hobby-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-@keyframes car-move {
+/*  animation  */
+/* @keyframes car-move {
     from {
         transform: translate(-540px, 0);
     }
@@ -264,7 +244,7 @@ a:active {
 .animation-row2-right {
     width: auto;
     background-color: var(--white);
-}
+} */
 
 
 .contact-content {
