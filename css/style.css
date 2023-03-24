@@ -97,7 +97,8 @@ body {
 
 h1 {
     font-size: 30px;
-    font-weight: var(--bold-font)
+    font-weight: var(--bold-font);
+    margin-top: 4%;
 }
 
 h2 {

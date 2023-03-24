@@ -21,8 +21,6 @@ body {
     font-weight: 400;
     font-size: var(--main-text);
     line-height: 1.6;
-    background-image: url("/img/Webpage-background.png");
-    background-size: cover;
 }
 
 .about-me-content {
@@ -51,8 +49,9 @@ body {
 }
 
 .about-text {
-    display: block;
+    display: flex;
     text-align: left;
+    align-self: center;
 }
 
 /* .hobby-list {
@@ -77,3 +76,6 @@ body {
 
 } 
 
+.resume {
+    display: block;
+}
