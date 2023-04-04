@@ -17,7 +17,7 @@
 }
 
 body {
-    background: rgba(0, 0, 0, 0.3) url(/img/web-bkg-3.jpg);
+    background: rgba(0, 0, 0, 0.3);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
@@ -32,13 +32,21 @@ body {
     text-align: left;
 }
 
+.sec-1-img {
+    position: relative;
+    display: block;
+    height: auto;
+    max-width: 100%;
+    z-index: -1;
+}
+
 .profile-img {
-    display: flex;
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: 18em 1fr;
 }
 
 .profile-portrait {
-    width: 250px;
+    width: 100%;
     border-radius: 50%;
 }
 
@@ -46,19 +54,50 @@ body {
     display: block;
     margin: 0 auto;
     text-align: center;
+    margin-bottom: 5%;
+    position: relative;
 }
 
 .about-me-content p {
-    max-width: 500px;
+    max-width: 600px;
+    min-width: 300px;
     margin: 0 auto;
     margin-bottom: 20px;
     color:white;
+    font-size: 1.5em;
 }
 
 .about-me-body {
     display: flex;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
+}
+
+.about-text {
+    display: flex;
+    margin-left: 5%;
+    text-align: left;
+    align-self: center;
+    width: 25%;
+}
+
+.resume {
+    display: block;
+    margin-bottom: 5%;
+}
+
+
+.card {
+    display: block;
+    width: 18rem;
+}
+
+.card-2 {
+    width: 100%;
+}
+
+.card-img {
+    width: 100%;
 }
 
 @media screen and (min-width: 700px) {
@@ -102,13 +141,9 @@ body {
 
 }
 
-.about-text {
-    display: flex;
-    margin-left: 5%;
-    text-align: left;
-    align-self: center;
+@media all and (max-width: 1350px) {
+    .card {
+        display: block;
+    }
 }
 
-.resume {
-    display: block;
-}
