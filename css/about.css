@@ -11,43 +11,17 @@
     --bold-font: 700;
 }
 
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'lato', sans-serif;
-    font-weight: 400;
-    font-size: var(--main-text);
-    line-height: 1.6;
-}
-
-.about-me-content {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.about-me-content p {
-    max-width: 500px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    color:white;
-}
-
-/* about me grid css  */
-/* .about-me-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-}  */
-
-.sec-1-cont {
-    position: relative;
-    text-align: center;
-}
-
-.profile {
-    z-index: -99;
+    background: rgba(0, 0, 0, 0.3) url(/img/web-bkg-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    
 }
 
 .intro-info {
@@ -68,10 +42,50 @@ body {
     border-radius: 50%;
 }
 
+.about-me-content {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-me-content p {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    color:white;
+}
+
 .about-me-body {
     display: flex;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
+}
+
+@media screen and (min-width: 700px) {
+    .about-me-content {
+        text-align: left;
+        display: block;
+        margin-left: 2rem;
+    }
+
+    .about-me-content h1 {
+        padding-left: 20rem;
+    }
+
+    .resume {
+        padding-left: 20rem;
+    }
+
+    .about-me-body {
+        display: flex;
+        justify-content: left;
+        grid-template-columns:none;
+        padding-left: 0;
+    }
+
+    .container-lg {
+        margin-left: 0;
+    }
 }
 
 @media all and (max-width: 700px) {
@@ -94,13 +108,6 @@ body {
     text-align: left;
     align-self: center;
 }
-
-.skill-table {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-
-} 
 
 .resume {
     display: block;
