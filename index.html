@@ -1,52 +1,79 @@
 <!DOCTYPE html> 
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Joseph Ho - Portfolio</title>
-    <link rel="shortcut icon" href="img/wikipedia.ico">
-    <link rel="stylesheet" href="css/Normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
-    <header>
-        <div class="page-header">
-            <!-- Add your logo image here-->
-            <div class="logo-container">
-                <a href="index.html">
-                    <img src="img/Joseph-ho-logo.jpg" alt="future logo" class="page-header__item header-logo" >
-                </a>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Joseph Ho Portfolio</title>
+        <link rel="shortcut icon" href="img/wikipedia.ico">
+        <link rel="stylesheet" href="css/Normalize.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/about.css">
+    </head>
+    <body>
+            <header>
+                <div>
+                    <!-- Add your logo image here-->
+                    <div class="navbar-brand">
+                    </div>
+                    <nav class="navbar navbar-expand-lg navbar-dark">
+                        <div class="container-fluid">
+                                <a href="index.html" class="navbar-brand"> Joseph Ho</a>
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" 
+                                        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                                <ul class="navbar-nav ms-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="about.html">Connect With Me</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="work.html">My Projects</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+        
+    <main>
+        <!-- section 1 -->
+        <div class="sec-1-cont">
+                <img class="img-fluid" src="img/web-bkg-3.jpg" alt="car driving into the sunset">
+            <div class= "intro-info container">
+                <h1>Hello World!</h1>
+                <p>
+                    My name is Joseph Ho. I am a <span>web</span> developer from Atlanta.
+                </p>
+                <a href="https://github.com/JosephHo7" target="_blank">Check out some of my code</a>
             </div>
-            <nav class="main-navigation page-header__item">
-                <ul role="menubar" class="navigation-list">
-                    <li role="presentation">
-                        <a href="index.html" role="menuitem" class="navigation-list__item-1 navigation-list__item--active">Home</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="about.html" role="menuitem" class="navigation-list__item-2">About Me</a>
-                    </li>
-                    <li>
-                        <a href="work.html" role="menuitem" class="navigation-list__item-3">Work</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="contact.html" role="menuitem" class="navigation-list__item-4">Contact</a>
-                    </li>
-                </ul>  
-            </nav>  
+              
         </div>
-    </header>
 
-<main>
-    <div class="profile">
-       
-        <h1>Hello World!</h1>
-        <p>
-            My name is Joseph Ho. I am a <span>web</span> developer from Atlanta.
-        </p>
-        <a href="https://github.com/JosephHo7" target="_blank">Check out some of my code</a>
-    </div>
-</main>
+        <!-- section 2 -->
+        <div class="about-me-content"> 
+            <h1>About Me</h1>
+            
+            <div class="container-lg about-me-body">
+                    <div class="profile-img">
+                        <img class="profile-portrait" src="img/joe-ho-headshot.jpg" alt="A photograph of me">
+                    </div> 
+        
+                    <div class="about-text">
+                        <p>
+                            Welcome to my page! <br>
+                            I am an aspiring new web designer. I love learning how to code and how to make better websites.
+                            In my spare time, I also love photography, learning how to cook, and playing video games.
+                        </p> <br>
+                    </div>    
+            </div>
+                <div class="resume mt-4">
+                    <a href="files/Joseph's Resume (SD).pdf" class="button" target="_blank">View My Resume</a><br>
+                </div>  
+        </div>
+    </main>
     
 <footer class="page-footer">
     <p>Find me on</p>
