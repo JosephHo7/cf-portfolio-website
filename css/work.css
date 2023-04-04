@@ -1,0 +1,12 @@
+.work-title {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.work-title p {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    color:white;
+}

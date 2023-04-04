@@ -6,7 +6,6 @@
     --light-green: #489c79;
     --shadow-color: rgba(0, 0, 0, 0.3);
     --white: #fff; 
-    --text-white: #fff;
     --larger-text: 18px;
     --main-text: 16px;
     --bold-font: 700;
@@ -33,41 +32,68 @@ body {
     max-width: 500px;
     margin: 0 auto;
     margin-bottom: 20px;
+    color:white;
 }
 
 /* about me grid css  */
-.about-me-grid {
+/* .about-me-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+}  */
+
+.sec-1-cont {
+    position: relative;
+    text-align: center;
+}
+
+.profile {
+    z-index: -99;
+}
+
+.intro-info {
+    z-index: 1;
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    text-align: left;
+}
+
+.profile-img {
+    display: flex;
+    grid-template-columns: 1fr;
 }
 
 .profile-portrait {
     width: 250px;
-    float: right;
-    margin-right: 40px;
     border-radius: 50%;
+}
+
+.about-me-body {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+@media all and (max-width: 700px) {
+    .about-me-body{
+        display: block;
+    }
+
+    .profile-img {
+        display: flex;
+        justify-content: center;
+        float: none;
+        margin-bottom: 5%;
+    }
+
 }
 
 .about-text {
     display: flex;
+    margin-left: 5%;
     text-align: left;
     align-self: center;
 }
-
-/* .hobby-list {
-    display: block;
-    list-style-type: none;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
-
-} */
-
-/* .skill-text {
-    display: flex;
-    justify-content: center;
-} */
 
 .skill-table {
     display: inline-block;

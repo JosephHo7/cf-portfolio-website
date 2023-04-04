@@ -1,15 +1,6 @@
-/* 
-Colors Used
-
-Text Color (Dark Gray): #2b2b2b
-Primary Color (Purple): #357b70
-Secondary Color (Orange): #e0b354
-Acitve-link Color (light-green): #489c79
-*/
-
 /*css design for all pages */
 :root {
-    --primary-color: #357b70;
+    --primary-color: #313131;
     --secondary-color: #e0b354;
     --dark-grey: #2b2b2b;
     --light-grey: #D3D3D3;
@@ -31,40 +22,14 @@ body {
     font-weight: 400;
     font-size: var(--main-text);
     line-height: 1.6;
+    background-color: var(--light-grey);
+    /* background: url(/img/Webpage-bkg-2.jpg); */
 }
 
-.profile{ 
+/* .profile{ 
     max-width: 700px;
     margin: 0 auto;
-}
-
-/* header footer  */
-.page-header {
-    display: flex;
-    width: 100%;
-    padding: 20px;
-    border-bottom: 1px solid var(--dark-grey);
-}
-
-.logo-container {
-    display: flex;
-    height: 70px;
-    width: 200px;
-}
-
-.header-logo {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.page-header__item:last-child {
-    flex-grow:1;
-    text-align: right;
-}
-
-.page-header__item {
-    flex: 0 1 200px;
-}
+} */
 
 .page-footer {
     clear: both;
@@ -73,32 +38,15 @@ body {
     align-items: center;
 }
 
-/* css for nav bar */
-.navigation-list {
-    list-style-type: none;
-    text-decoration: none;
-}
-
-.navigation-list li {
-    display: inline-block;
-    margin-left: 15px;
-    text-decoration: none;
-}
-
-.navigation-list__item-1, .navigation-list__item-2, .navigation-list__item-3, .navigation-list__item-4  {
-    transition: .2s font-size;
-    text-decoration: none;
-}
-
-.navigation-list__item-1:hover, .navigation-list__item-2:hover, .navigation-list__item-3:hover, .navigation-list__item-4:hover {
-    font-size: var(--larger-text);
-    text-decoration: none;
+p {
+    color: white;
 }
 
 h1 {
     font-size: 30px;
     font-weight: var(--bold-font);
     margin-top: 4%;
+    color: white;
 }
 
 h2 {
@@ -112,12 +60,12 @@ h3 {
 }
 
 a {
-    color: var(--primary-color);
+    color: var(--white);
     text-decoration: none;
 }
 
 a:visited {
-    color: var(--primary-color);
+    color: var(--white);
     text-decoration: none;
 }
 
@@ -126,7 +74,7 @@ a:hover, a:focus{
 }
 
 a:active {
-    color: var(--light-green);
+    color: var(--white);
     text-decoration: none;
 }
 
@@ -185,7 +133,7 @@ a:active {
     border:none; 
     display: inline-block;
     font-family: inherit;
-    background-color: var(--primary-color);
+    background-color: var(--dark-grey);
     color: var(--text-white);
     text-decoration: none;
     padding: 10px;
@@ -203,50 +151,6 @@ a:active {
     text-decoration: none;
     color: var(--text-white);
 }
-
-/*  animation  */
-/* @keyframes car-move {
-    from {
-        transform: translate(-540px, 0);
-    }
-    to {
-        transform: translate(554px, 0);
-    }
-}
-
-.city-skyline-pic {
-    width: 100%;
-}
-
-.car-pic {
-    height: 70%;
-    width: 20%;
-    animation: 8s car-move infinite linear; 
-    z-index: -1;
-}
-
-.animation-container {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 1fr 100px;
-}
-
-.animation-row2-left {
-    width: auto;
-    background-color: var(--white);
-}
-
-.animation-row2-center {
-    display: flex;
-    width: auto;
-   justify-content: center;
-}
-
-.animation-row2-right {
-    width: auto;
-    background-color: var(--white);
-} */
-
 
 .contact-content {
     text-align: center;
